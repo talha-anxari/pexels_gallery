@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixels Gallery</title>
+    <!-- Box icons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- favicon link -->
+     <link rel="icon" href="favicon/icon.png">
+    <!-- custom css link -->
+    <link rel="stylesheet" href="css/index.css">
+    <!-- custom js link -->
+    <script src="js/index.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="search">
+            <img src="img/Mystic Forest Mist.png" alt="Background">
+            <div class="inputArea">
+                <h1 class="title">
+                    The Best Free Stock Photos, Royalty Free Images & Videos Shared By Creators.
+                </h1>
+                <div class="searchBox">
+                    <div class="dropDown">
+                        <input type="checkbox" id="dropDown" placeholder="Search Photos Or Videos">
+                        <label for="dropDown" class="dropDown_btn">
+                            <span id="dropdownSelectedValue">
+                                <i class='bx bxs-image'></i> Photos
+                            </span>
+                            <span class="arrow"></span>
+                        </label>
+                        <ul class="dropDown_content">
+                            <li><i class='bx bxs-image'></i>Photos</li>
+                            <li><i class='bx bxs-videos'></i>Video</li>
+                        </ul>
+                    </div>
+                    <input type="text" placeholder="Search Photos Or Videos" id="searchText">
+                    <i class='bx bx-search'></i>
+                </div>
+                <!-- <p>Total Search Results:<span id="totalResults"></span></p> -->
+                <div class="containers">
+                    <h1>Search Results</h1>
+                    <p>Total Search Results: <span id="totalResults">0</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="gallery">
+            <div class="items"></div>
+            <button type="button" class="loadMore">Load More</button>
+        </div>
+        <div class="popupView">
+            <div class="wrapper">
+                <div class="details">
+                    <div class="photographer">
+                        <i class='bx bx-camera' ></i>
+                        <span>Muhammad Talha Naeem Ansari</span>
+                    </div>
+                    <div class="button">
+                        <button title="Download Now" id="downloadClick" type="button">
+                            <i id="setDownloadAttr" class='bx bxs-download'></i>
+                        </button>
+                        <button title="Close" type="button" onclick="hidePopupView()">
+                            <i class='bx bx-x'></i>
+                        </button>
+                    </div>
+                    <div class="previewItem"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

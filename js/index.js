@@ -88,9 +88,13 @@ function generateAPIResponse(searchItem, isLoadMore) {
         </div>
       `;
       loadMore.style.display = 'none';
+      items.style.columns = 'auto'
       return;
     }
-
+    items.style.columns = '5 340px'
+    if(document.querySelector('.notFound')){
+      document.querySelector('.notFound').remove();
+    }
     // Displaying loaded items based on searchItem type
     if (searchItem === "Picture" && data.photos !== undefined) {
       data.photos.forEach((photo) => {

@@ -201,13 +201,6 @@ button, i:not(.bxs-image, .bx-search, .bxs-videos){
     border-radius: 5px;
     background-color: #262626;
 }
-/* .loadMore{
-    color: chartreuse;
-    background: #fff;
-    margin: 50px 0;
-    font-size: 1rem;
-    padding: 15px 25px;
-} */
 
 .loadMore {
     background-color: rgba(255, 255, 255, 0.1);
@@ -226,7 +219,23 @@ button, i:not(.bxs-image, .bx-search, .bxs-videos){
     color: #ddd;
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
 }
-
+.notFound{
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 30px 25px;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+    backdrop-filter: blur(10px);
+    width: fit-content;
+}
+.notFound i{
+    color: #fff;
+    padding: 10px;
+    font-size: 35px;
+}
 
 .notFound h1{
     margin: 15px 0;
